@@ -5,13 +5,13 @@ let getStudentsdatafromRDS = async () => {
             var connection = mysql.createConnection({
                 host     : 'mywebserverrds.cswrgxjcdcq9.ap-south-1.rds.amazonaws.com',
                 user     : 'admin',
-                password : 'Admin321',
-                database : 'cgu_training'
+                password : 'Admin',
+                database : 'cgu_trainingrds'
             });
             
             connection.connect();
             
-            connection.query('SELECT * from students', function (error, results, fields) {
+            connection.query('SELECT * from student', function (error, results, fields) {
             if (error) return reject(error);
             console.log('The solution is: ', results);
             return resolve(results);
