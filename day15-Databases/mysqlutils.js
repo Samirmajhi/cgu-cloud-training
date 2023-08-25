@@ -3,7 +3,7 @@ let getStudentsdatafromRDS = async () => {
         try {
             var mysql      = require('mysql');
             var connection = mysql.createConnection({
-                host     : 'mywebserverrds.cswrgxjcdcq9.ap-south-1.rds.amazonaws.com',
+                host     : 'database-1.c45qhrcvcdy2.ap-south-1.rds.amazonaws.com',
                 user     : 'admin',
                 password : 'Admin',
                 database : 'cgu_trainingrds'
